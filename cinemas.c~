@@ -1,0 +1,20 @@
+#include<stdio.h>
+void pvr();
+void inox();
+void cinemas(){
+	int i;	
+	printf("\t\t\t 	CINEMAS\n");
+	printf("1.PVR \n");
+	printf("2.IONOX\n");
+	printf("press 0 for previous menu\n");
+		scanf("%d",&i);	
+	if(i==1) {
+	pvr();
+	}
+	if(i==2) {
+	inox();
+	}
+	else {
+	 printf("Plese seelect among the given options");
+	}
+  }

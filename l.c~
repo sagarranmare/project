@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "list.h"
+void init(list *l) {
+	l->head = l->tail = NULL;
+	l->length = 0;
+}
+void add(list *l, char t,int s){
+tmp = (node *)malloc(sizeof(node));				
+		tmp->i=s;						
+		tmp->c=t;
+		p=tmp->next;
+}
+void chk(list *l, char t,int s) {
+while(p != l->tail) {
+			printf("%d,%c ", p->i,p->c);
+			if(p->i==s&&p->c==t){
+				printf("seats are already booked select other");
+				seats();
+			}
+			p = p->next;
+			else {
+			break;
+			}
+		}
+		p=(node *)malloc(sizeof(node));
+		tmp=p;
+		tmp->i=s;
+		tmp->c=t;
+		p=tmp->next;
+}
