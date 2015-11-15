@@ -17,31 +17,36 @@
  *****************************************************************************/
 
 #include<stdio.h>
+void date(int,char);
 void cinemas();
-void movies();
-int main() {
-	int i,pp;
+void inox() {
+	int i,a=2,pp;
+	char x;
 	for(pp=0;pp<36;pp++){
 	printf("____");
 	}
-	printf("\n\n\n\t\t\t\tWELCOME TO ONLINE TICKET BOOKING SYSTEM\n\n");
-	printf("\t\t\t\t\t\t1.MULTIPLEX\n\n");
-	printf("\t\t\t\t\t\t2.Movies\n\n\n\n\n\n");
-for(pp=0;pp<36;pp++){
+	printf("\n\n\n\t\t\t\tNOW SHOWING\n\n");
+	printf("\t\t\t\t1. xyz\n\n");
+	printf("\t\t\t\t2.asmmbd\n\n");
+	printf("\t\t\t\tpress 0 for previous menu\n");
+	printf("\n\n\n\n\n\n");
+	for(pp=0;pp<36;pp++){
 	printf("____");
 	}
 	scanf("%d",&i);	
-	if(i == 1) {
-		cinemas();
+	if(i==1){
+	x='c';
+	 date(a,x);
 	}
-	
-	else if(i==2) {
-		 movies();
+	else if(i==2){
+	x='d';
+	date(a,x);
+	}
+	else if(i=0){
+	cinemas();
 	}
 	else {
-		printf("wrong selection, enter correctly");
-		main();
-	}
-	
-return 0;	
+		printf("wrong selection\n");
+	inox();	
+}
 }
