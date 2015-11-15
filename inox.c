@@ -1,21 +1,47 @@
+ /*****************************************************************************
+ * Copyright (C) Sagar S. Ranmare  ranmaresagar@yahoo.in 
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2.1 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+ *****************************************************************************/
+
 #include<stdio.h>
-void date(int);
 void cinemas();
-void inox() {
-	int i,a=2;
-	printf("\t\t NOW SHOWING\n");
-	printf("1. xyz\n");
-	printf("2.asmmbd\n");
-	printf("press 0 for previous menu\n");
-	scanf("%d",&i);	
-	if(i==1||i==2){
-	 date(a);
+void movies();
+int main() {
+	int i,pp;
+	for(pp=0;pp<36;pp++){
+	printf("____");
 	}
-	else if(i=0){
-	cinemas();
+	printf("\n\n\n\t\t\t\tWELCOME TO ONLINE TICKET BOOKING SYSTEM\n\n");
+	printf("\t\t\t\t\t\t1.MULTIPLEX\n\n");
+	printf("\t\t\t\t\t\t2.Movies\n\n\n\n\n\n");
+for(pp=0;pp<36;pp++){
+	printf("____");
+	}
+	scanf("%d",&i);	
+	if(i == 1) {
+		cinemas();
+	}
+	
+	else if(i==2) {
+		 movies();
 	}
 	else {
-		printf("wrong selection");
+		printf("wrong selection, enter correctly");
+		main();
 	}
+	
+return 0;	
 }
-
