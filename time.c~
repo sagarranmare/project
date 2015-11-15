@@ -14,3 +14,4 @@ void time(int a,char z){
 	}
 	seats(q,x);
 }
+a
